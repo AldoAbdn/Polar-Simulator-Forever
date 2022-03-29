@@ -20,7 +20,12 @@ ballrect = ball.get_rect()
 
 # Create Text Surface
 font = pygame.font.SysFont(None, 24)
-text = font.render('If you come at the king, you better not miss', True, (50, 50, 50))
+text = font.render('If you come for the king, you better not miss', True, (50, 50, 50))
+
+# Music
+pygame.mixer.music.load("music/DukeNukem.mp3")
+pygame.mixer.music.set_volume(1)
+pygame.mixer.music.play()
 
 # Game Loop
 while 1:
